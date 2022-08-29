@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
-    background: #E9ECF8;
+    background: #E5E5E5;
 }
 
 /*Main*/
@@ -57,15 +57,43 @@
     border: none;
 }
 
+/*Placeholder Color*/
+
+::placeholder {
+    color: #0A3871;
+}
+
 /*When The textarea is selected*/
 
 .txt-mensaje:focus {
     border: none;
     outline: none;
+    text-transform: lowercase;
 }
 
-::placeholder {
-    color: #0A3871;
+.txt-mensaje:focus::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    opacity: 0;
+    -webkit-transition: opacity .0s ease-in-out;
+    -moz-transition: opacity .0s ease-in-out;
+    -o-transition: opacity .0s ease-in-out;
+    transition: opacity .0s ease-in-out;
+
+}
+
+.txt-mensaje:focus::-moz-placeholder {
+    /* Firefox 19+*/
+    opacity: 0;
+}
+
+.txt-mensaje:focus:-ms-input-placeholder {
+    /* IE 10+ */
+    opacity: 0;
+}
+
+.txt-mensaje:focus:-moz-placeholder {
+    /* Firefox 18- */
+    opacity: 0;
 }
 
 /*Image and Message of the exceptions*/
@@ -102,7 +130,7 @@ label {
     padding-left: 29px;
     font-weight: 600;
 
-    font-family: Inter;
+    font-family: 'Inter';
     font-style: normal;
     font-size: 16px;
     line-height: 100%;
@@ -183,4 +211,81 @@ label {
     font-size: 16px;
     line-height: 19px;
     justify-content: center;
+}
+
+/*Section To Copy The Encrypted or Encrypted Text*/
+
+.copy-message {
+    position: absolute;
+    width: 400px;
+    height: 639px;
+    left: 65%;
+    top: 15px;
+    padding-left: 20px;
+    padding-top: 80px;
+    background: #FFFFFF;
+    border-radius: 32px;
+    transition: 0.8s all;
+}
+
+.copy-message:hover {
+    /* Shadow */
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.527);
+}
+
+.copy-message h2 {
+    position: static;
+    width: 336px;
+    height: 58px;
+    left: 0px;
+    top: 0px;
+    text-transform: capitalize;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 120%;
+
+
+    text-align: center;
+    color: #343A40;
+    background: #FFFFFF;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 16px 0px;
+}
+
+.copy-message h3 {
+    position: static;
+    width: 336px;
+    height: 48px;
+    left: 0px;
+    top: 74px;
+    text-transform: capitalize;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+
+    text-align: center;
+    color: #495057;
+    background: #FFFFFF;
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 16px 0px;
+}
+
+.copy-message-div,
+.copy-message-div img {
+    padding-top: 15px;
+    background: #FFFFFF;
 }

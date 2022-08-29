@@ -16,20 +16,28 @@
 <body>
     <main class="main">
         <header class="logo-header">
-            <img src="imgs/Logo.png" />
+            <img src="imgs/Logo.png" alt="Logo Letra a De Alura"/>
         </header>
 
         <section class="div-prin">
-            <textarea class="txt-mensaje" id="txt-mensaje" maxlength="120" placeholder="Escribe Un Mensaje"></textarea>
+            <textarea class="txt-mensaje" id="txt-mensaje" maxlength="244" placeholder="escribe un mensaje"></textarea>
 
             <div class="alerta">
-                <img src="imgs/comprobar.png" class="img-excepciones">
+                <img src="imgs/comprobar.png" class="img-excepciones" alt="Icono de Exepciones">
                 <label for="txt-mensaje">Solo letras minúsculas y sin acentos.</label>
             </div>
 
             <div class="div-botones">
                 <button type="submit" class="btn-encrip" id="btn-encrip">Encriptar</button>
                 <button type="submit" class="btn-desencrip" id="btn-desencrip">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="copy-message">
+            <div class="copy-message-div" id="div-disappear">
+                <img src="imgs/Muñeco.png" alt="Muñeco Sosteniendo Una Lupa">
+                <h2>ningún mensaje ha sido encontrado</h2>
+                <h3>ingresa el texto que deseas encriptar o desencriptar.</h3>
             </div>
         </section>
     </main>

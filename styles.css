@@ -68,7 +68,7 @@
     color: #0A3871;
 }
 
-/*Imagen y Mensaje*/
+/*Image and Message of the exceptions*/
 
 .alerta {
     display: flex;
@@ -109,7 +109,7 @@ label {
     color: #495057;
 }
 
-/*Botones*/
+/*Buttons to encrypt and decrypt */
 
 .div-botones {
     display: flex;

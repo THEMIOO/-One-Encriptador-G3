@@ -10,18 +10,19 @@
     <meta name="keywords" content="Compartir, Amigos, Estudiantes, Programación" />
     <link rel="icon" href="imgs/insignia.png" />
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:ital@1&display=swap"
+        rel="stylesheet">
     <title>Encriptador De Texto</title>
 </head>
 
 <body>
     <main class="main">
         <header class="logo-header">
-            <img src="imgs/Logo.png" alt="Logo Letra a De Alura"/>
+            <img src="imgs/Logo.png" alt="Logo Letra a De Alura" />
         </header>
 
         <section class="div-prin">
-            <textarea class="txt-mensaje" id="txt-mensaje" maxlength="244" placeholder="escribe un mensaje"></textarea>
+            <textarea class="txt-mensaje" id="txt-mensaje" type="text" maxlength="244" placeholder="escribe un mensaje"></textarea>
 
             <div class="alerta">
                 <img src="imgs/comprobar.png" class="img-excepciones" alt="Icono de Exepciones">
@@ -32,6 +33,7 @@
                 <button type="submit" class="btn-encrip" id="btn-encrip">Encriptar</button>
                 <button type="submit" class="btn-desencrip" id="btn-desencrip">Desencriptar</button>
             </div>
+            <div></div>
         </section>
 
         <section class="copy-message">
@@ -39,6 +41,10 @@
                 <img src="imgs/Muñeco.png" alt="Muñeco Sosteniendo Una Lupa">
                 <h2>ningún mensaje ha sido encontrado</h2>
                 <h3>ingresa el texto que deseas encriptar o desencriptar.</h3>
+            </div>
+            <div id="div-appear" class="div-appear">
+                <textarea class="after-copy" type="text" id="copied-message" placeholder="el mensaje ha sido copiado correctamente, no hay ningún mensaje disponible." readonly></textarea>
+                <button class="btn-copy" type="submit" id="btn-copy">Copiar</button>
             </div>
         </section>
     </main>
